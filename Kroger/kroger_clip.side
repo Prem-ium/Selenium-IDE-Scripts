@@ -1,0 +1,181 @@
+{
+  "id": "99c70963-0bb4-4159-abbd-a06da5b7236d",
+  "version": "2.0",
+  "name": "coupon",
+  "url": "https://www.kroger.com/savings/cl/coupons/",
+  "tests": [{
+    "id": "84c870a3-e674-4675-956b-ad538338442f",
+    "name": "kroger",
+    "commands": [{
+      "id": "f3d59ab7-fc23-4c31-8cbf-178f54ced548",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,528.888916015625)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b43860b-e9bb-45d1-9e80-ad5e83f2b11c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'In-Store')]",
+      "targets": [
+        ["css=li:nth-child(1) .kds-Text--m:nth-child(3)", "css:finder"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div[2]/div/details/ul/li/label/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"],
+        ["xpath=//span[contains(.,'In-Store')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "556580d9-3f9d-4805-8103-b52b11455b9d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1469.77783203125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af3b3989-78f6-4b0c-a47e-905bf10407e6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "314cf5f3-ca10-482f-b474-5d69ddcc1326",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 100",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "c8ed14b2-2494-42c8-903c-a5dda02f868e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 0",
+      "targets": [],
+      "value": "c"
+    }, {
+      "id": "dc3cc547-db9e-4070-85ef-41c8e25fefe4",
+      "comment": "",
+      "command": "pause",
+      "target": "100000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4302fd9-b308-4613-b7cd-e2bcf44e3f25",
+      "comment": "",
+      "command": "echo",
+      "target": "${count} + 1",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e27ed4c8-b9c1-4ba4-8991-c028fae1bbf1",
+    "name": "Kroger_Coupon_Clip",
+    "commands": [{
+      "id": "3fa03c72-31ff-4f2a-a742-eb4cf10f527a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.kroger.com/savings/cl/coupons/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd969561-6c85-4f13-be10-ffb08e40fba6",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "67ecad8a-db88-4ae6-9ac4-58af8baaf26d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'In-Store')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2ef8a92-e7fe-4f5f-a62c-617f7e96fb35",
+      "comment": "",
+      "command": "while",
+      "target": "${x} < 150",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a183b259-6e9e-45c3-acd5-f2d59b4a13ed",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Clip')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aed63cb4-728f-4301-a684-2b568791ea91",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8cb8cb49-233f-4ea3-9124-122b28b988b2",
+    "name": "Remove",
+    "commands": [{
+      "id": "0e449847-a295-4537-bb62-cbc4000527fd",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.kroger.com/savings/cl/mycoupons/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c0d93ae-dfce-45fb-8a15-b3ebbe2d7668",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "3440e48c-5722-48b3-82f2-15f78902ef50",
+      "comment": "",
+      "command": "while",
+      "target": "${x} < 150",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "448d11c2-4587-4aec-a97f-25cc0bef74ec",
+      "comment": "",
+      "command": "echo",
+      "target": "${x}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e01df5a4-97e8-477a-a0c1-f2d5aefcd120",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Unclip')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbed0195-cf17-4f1b-9136-628777185b6e",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e21c8aa-5ca0-431c-a668-077ea12a8424",
+      "comment": "",
+      "command": "pause",
+      "target": "100000",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "acc4a1e5-9d6f-4bda-ac3b-3bf977122ec9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.kroger.com/savings/cl/coupons/", "https://www.kroger.com/", "https://www.kroger.com/savings/cl/mycoupons/"],
+  "plugins": []
+}

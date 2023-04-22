@@ -1,0 +1,1 @@
+Log onto your Kroger account and start the test in Selenium IDE to automate the clipping of coupons.

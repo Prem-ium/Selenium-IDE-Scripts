@@ -1,0 +1,158 @@
+{
+  "id": "cdeb9439-229c-4caa-b9cd-bb052a26c7c9",
+  "version": "2.0",
+  "name": "AI",
+  "url": "https://www.fotor.com",
+  "tests": [{
+    "id": "cb829b93-3747-443d-bf7b-fd771f436a14",
+    "name": "Sign Up",
+    "commands": [{
+      "id": "051968e3-75eb-466d-8713-2c7f2670ae1d",
+      "comment": "",
+      "command": "open",
+      "target": "/features/ai-image-generator/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7677e759-c5a7-4654-82a7-03606f9225a5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "810x912",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4191cad-91ef-4ee1-b775-78f6aff95e2c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.register-header-button",
+      "targets": [
+        ["css=.register-header-button", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3a80000-cdb4-4de3-81e7-a0a5ab7f0a49",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.register-header-button",
+      "targets": [
+        ["css=.register-header-button", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "334a33bd-fb8f-49ba-8aff-95181cb3af5d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.register-header-button",
+      "targets": [
+        ["css=.register-header-button", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eff0c68a-e957-4cbd-b22d-1e708d6145cb",
+      "comment": "",
+      "command": "executeScript",
+      "target": "  const length = 10; const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';  let result = '';    for (let i = 0; i < length; i++) {     result += characters.charAt(Math.floor(Math.random() * characters.length));   }    return result;",
+      "targets": [],
+      "value": "user"
+    }, {
+      "id": "1d3d75c6-f37e-4891-94c7-a71b123234fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info:nth-child(1)",
+      "targets": [
+        ["css=.info:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/div[5]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]/div/div/div[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1333f894-d0ac-48e7-a0eb-27eccce646f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inputBox:nth-child(7) > .inputClass",
+      "targets": [
+        ["css=.inputBox:nth-child(7) > .inputClass", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a4b0206-3c4b-4475-a750-a6f3db816e82",
+      "comment": "",
+      "command": "type",
+      "target": "css=.inputBox:nth-child(7) > .inputClass",
+      "targets": [
+        ["css=.inputBox:nth-child(7) > .inputClass", "css:finder"],
+        ["xpath=//input[@value='fybhgfyubgfdhb@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${user}@gmail.com"
+    }, {
+      "id": "3f05a591-5699-468d-8aac-630c6c9ccf9a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inputBox:nth-child(8) > .inputClass",
+      "targets": [
+        ["css=.inputBox:nth-child(8) > .inputClass", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16b80fad-deb4-4a8f-9790-c296bd421e8e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.inputBox:nth-child(8) > .inputClass",
+      "targets": [
+        ["css=.inputBox:nth-child(8) > .inputClass", "css:finder"],
+        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "Thismypass34!"
+    }, {
+      "id": "c93cec4e-a18a-4bf6-bf10-bfc5cc667da6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkBox",
+      "targets": [
+        ["css=.checkBox", "css:finder"],
+        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/div[7]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]/div/div/div[7]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8f9fe0b-cf9f-4dc0-800a-72315a58e55b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info:nth-child(1)",
+      "targets": [
+        ["css=.info:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/div[9]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]/div/div/div[9]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c269db1f-d163-441b-92f2-69ac1093a0ad",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cb829b93-3747-443d-bf7b-fd771f436a14"]
+  }],
+  "urls": ["https://www.fotor.com/"],
+  "plugins": []
+}
