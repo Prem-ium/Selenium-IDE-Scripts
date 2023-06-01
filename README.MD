@@ -6,6 +6,8 @@ These Scripts use [Selenium IDE browser extension.](https://github.com/SeleniumH
 rel="noreferrer"> <img
 src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg"
 alt="selenium" width="40" height="40" /></a>
+## Bing Account Creator
+Semi-Automated process to creating a new Bing/Microsoft account. Automates up until you need an email verification or need to complete a captcha. 
 
 ## Kroger
 A Selenium IDE project that clips as the maximum amount of coupons on the Kroger website. Simpily sign into your account on the browser of your choice and run the test to start the process of clipping the maximum amount of Kroger coupons to your Kroger card.
