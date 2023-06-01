@@ -1,1 +1,1 @@
-A .side script for automating part of the process of creating a new account.
+Semi-Automated process to creating a new Bing/Microsoft account. Automates up until you need an email verification or need to complete a captcha.
