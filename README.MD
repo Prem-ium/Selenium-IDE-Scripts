@@ -22,24 +22,21 @@
   </video>
 </details>
 
+
+## Scripts Overview
 These scripts utilize the [Selenium IDE browser extension](https://github.com/SeleniumHQ/selenium-ide).  
 <a href="https://www.selenium.dev/selenium-ide/" target="_blank" rel="noreferrer">
   <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40" />
 </a>
 
-## Scripts Overview
+## Bing Account Manager
+This project utilizes Selenium IDE to automate the process of creating a new Bing/Microsoft account. The automation handles all steps up to the point where email verification or CAPTCHA completion is required.
 
-### Bing Account Creator
+## Kroger
+A Selenium IDE project that clips as the maximum amount of coupons on the Kroger website. Simpily sign into your account on the browser of your choice and run the test to start the process of clipping the maximum amount of Kroger coupons to your Kroger card.
 
-A semi-automated process for creating a new Bing/Microsoft account. The script automates the process until email verification or captcha completion is required.
-
-### Kroger Coupon Clipper
-
-A Selenium IDE project that clips the maximum number of coupons on the Kroger website. Simply sign in to your account on your browser of choice and run the test to start clipping coupons directly to your Kroger card.
-
-### Foctor AI Account Generator
-
-An automation project to generate a new account using random details. A random email is generated with a basic password, which you can change or alter. You can then use all the free AI credits to generate images, art, or more. Log out and re-run the script to receive more free credits with a new account.
+## Foctor AI
+An automation project to generate a new account using random details. A random email is generated with some basic password, that you are able to change or alter. You can then use up all the free AI credits to generate images, art, or more. You can log out and re-run the script to recieve more free credits in another new account.
 
 ## Donations ❤️
 
