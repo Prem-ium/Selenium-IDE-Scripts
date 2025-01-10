@@ -66,3 +66,10 @@ If you appreciate my work and would like to show your support, there are two con
    - [Explore Referral Links](https://github.com/Prem-ium/Referral-Link-Me/blob/main/README.md)  
 
 Your generous donations help cover development costs and expand the project's reach. Thank you for your support!
+
+---
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
