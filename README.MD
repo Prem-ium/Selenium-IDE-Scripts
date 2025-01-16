@@ -14,9 +14,9 @@
 ---
 ## Demo
 
-**Important Notice:** [`Gold Sponsors`](https://github.com/sponsors/Prem-ium) receive exclusive access to advanced scripts, such as automating the creation of Bing Rewards accounts.
+**Important Notice:** [`Gold Sponsors`](https://github.com/sponsors/Prem-ium) receive exclusive access to advanced scripts, such as automating the creation of Bing Rewards accounts. As of 1/9/25, Gold Sponsors will also receive automation scripts using the UI.Vision browser extension (e.g., a Kroger Account Generator).
 
-The following is a video dmeo of a Gold sponsor exclusive Selenium IDE script, for automating the creation of Viki Rakuten accounts:
+The following is a video demo of a Gold sponsor exclusive Selenium IDE script, for automating the creation of Viki Rakuten accounts:
 
 <details open>
   <summary>🎥 Video Demo: Bing Rewards Account Creation</summary>
@@ -27,7 +27,6 @@ The following is a video dmeo of a Gold sponsor exclusive Selenium IDE script, f
 </details>
 
 ---
-
 ## Scripts Overview
 These scripts utilize the [Selenium IDE browser extension](https://github.com/SeleniumHQ/selenium-ide).  
 <a href="https://www.selenium.dev/selenium-ide/" target="_blank" rel="noreferrer">
