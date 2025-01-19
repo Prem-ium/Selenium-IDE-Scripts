@@ -19,7 +19,7 @@
 The following is a video demo of a Gold sponsor exclusive Selenium IDE script, for automating the creation of Viki Rakuten accounts:
 
 <details open>
-  <summary>🎥 Video Demo: Bing Rewards Account Creation</summary>
+  <summary>🎥 Video Demo: Viki Rakuten Account Creation</summary>
   <video src="https://github.com/user-attachments/assets/d536d621-ca19-43c1-b619-10a5257d7754" controls="controls" style="max-width: 100%; height: auto;">
     Your browser does not support video tags.
     https://github.com/user-attachments/assets/d536d621-ca19-43c1-b619-10a5257d7754
