@@ -28,6 +28,11 @@ The following is a video demo of a Gold sponsor exclusive Selenium IDE script, f
 
 ---
 ## Scripts Overview
+
+**3/20/25 Update**: As of today, the Selenium IDE extension has been removed from the Chrome Web Store. You can still use the automation projects by enabling **Developer Mode** in your browser's extensions page and manually installing the extension by dragging and dropping the `Selenium-IDE.crx` file.  
+Alternatively, you can download an extension called **UI.Vision**, use the **Import Selenium .side** option in its settings to convert `.side` files to `.json`, and run the automation scripts as usual.
+
+
 These scripts utilize the [Selenium IDE browser extension](https://github.com/SeleniumHQ/selenium-ide).  
 <a href="https://www.selenium.dev/selenium-ide/" target="_blank" rel="noreferrer">
   <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40" />
