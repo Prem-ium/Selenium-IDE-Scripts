@@ -1,7 +1,7 @@
 {
   "id": "cdeb9439-229c-4caa-b9cd-bb052a26c7c9",
   "version": "2.0",
-  "name": "AI",
+  "name": "Fotor AI Sign Up",
   "url": "https://www.fotor.com",
   "tests": [{
     "id": "cb829b93-3747-443d-bf7b-fd771f436a14",
@@ -78,11 +78,13 @@
       "id": "1333f894-d0ac-48e7-a0eb-27eccce646f2",
       "comment": "",
       "command": "click",
-      "target": "css=.inputBox:nth-child(7) > .inputClass",
+      "target": "id=emailWayStepInputEmail",
       "targets": [
-        ["css=.inputBox:nth-child(7) > .inputClass", "css:finder"],
-        ["xpath=//input[@value='']", "xpath:attributes"],
-        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/div[5]/input", "xpath:idRelative"],
+        ["id=emailWayStepInputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#emailWayStepInputEmail", "css:finder"],
+        ["xpath=//input[@id='emailWayStepInputEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/form/div/div/div/input", "xpath:idRelative"],
         ["xpath=//input", "xpath:position"]
       ],
       "value": ""
@@ -90,11 +92,13 @@
       "id": "9a4b0206-3c4b-4475-a750-a6f3db816e82",
       "comment": "",
       "command": "type",
-      "target": "css=.inputBox:nth-child(7) > .inputClass",
+      "target": "id=emailWayStepInputEmail",
       "targets": [
-        ["css=.inputBox:nth-child(7) > .inputClass", "css:finder"],
-        ["xpath=//input[@value='fybhgfyubgfdhb@gmail.com']", "xpath:attributes"],
-        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/div[5]/input", "xpath:idRelative"],
+        ["id=emailWayStepInputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#emailWayStepInputEmail", "css:finder"],
+        ["xpath=//input[@id='emailWayStepInputEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/form/div/div/div/input", "xpath:idRelative"],
         ["xpath=//input", "xpath:position"]
       ],
       "value": "${user}@gmail.com"
@@ -102,45 +106,48 @@
       "id": "3f05a591-5699-468d-8aac-630c6c9ccf9a",
       "comment": "",
       "command": "click",
-      "target": "css=.inputBox:nth-child(8) > .inputClass",
+      "target": "css=.email_way_bottom_row_next",
       "targets": [
-        ["css=.inputBox:nth-child(8) > .inputClass", "css:finder"],
-        ["xpath=//input[@value='']", "xpath:attributes"],
-        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/div[6]/input", "xpath:idRelative"],
-        ["xpath=//div[6]/input", "xpath:position"]
+        ["css=.email_way_bottom_row_next", "css:finder"],
+        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/div/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
       "id": "16b80fad-deb4-4a8f-9790-c296bd421e8e",
       "comment": "",
       "command": "type",
-      "target": "css=.inputBox:nth-child(8) > .inputClass",
+      "target": "id=emailWayStepInputPassword",
       "targets": [
-        ["css=.inputBox:nth-child(8) > .inputClass", "css:finder"],
-        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/div[6]/input", "xpath:idRelative"],
-        ["xpath=//div[6]/input", "xpath:position"]
+        ["id=emailWayStepInputPassword", "id"],
+        ["css=#emailWayStepInputPassword", "css:finder"],
+        ["xpath=//input[@id='emailWayStepInputPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/form/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
       ],
       "value": "Thismypass34!"
     }, {
       "id": "c93cec4e-a18a-4bf6-bf10-bfc5cc667da6",
       "comment": "",
       "command": "click",
-      "target": "css=.checkBox",
+      "target": "css=.checkBoxSignUp_inner",
       "targets": [
-        ["css=.checkBox", "css:finder"],
-        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/div[7]/div", "xpath:idRelative"],
-        ["xpath=//div[3]/div/div/div[2]/div/div/div[7]/div", "xpath:position"]
+        ["css=.checkBoxSignUp_inner", "css:finder"],
+        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/form/div/div[3]/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div[3]/div/div", "xpath:position"]
       ],
       "value": ""
     }, {
       "id": "b8f9fe0b-cf9f-4dc0-800a-72315a58e55b",
       "comment": "",
       "command": "click",
-      "target": "css=.info:nth-child(1)",
+      "target": "css=.button_reset_css > span",
       "targets": [
-        ["css=.info:nth-child(1)", "css:finder"],
-        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/div[9]/div", "xpath:idRelative"],
-        ["xpath=//div[3]/div/div/div[2]/div/div/div[9]/div", "xpath:position"]
+        ["css=.button_reset_css > span", "css:finder"],
+        ["xpath=//div[@id='rootLogin']/div/div/div[2]/div/div/div/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Create my account')]", "xpath:innerText"]
       ],
       "value": ""
     }]
