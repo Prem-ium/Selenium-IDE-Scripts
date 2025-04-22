@@ -1,81 +1,212 @@
 {
   "id": "99c70963-0bb4-4159-abbd-a06da5b7236d",
   "version": "2.0",
-  "name": "coupon",
+  "name": "Kroger Digital Coupon Clip/Unclip",
   "url": "https://www.kroger.com/savings/cl/coupons/",
   "tests": [{
-    "id": "84c870a3-e674-4675-956b-ad538338442f",
-    "name": "kroger",
-    "commands": [{
-      "id": "f3d59ab7-fc23-4c31-8cbf-178f54ced548",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,528.888916015625)",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "4b43860b-e9bb-45d1-9e80-ad5e83f2b11c",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=//span[contains(.,'In-Store')]",
-      "targets": [
-        ["css=li:nth-child(1) .kds-Text--m:nth-child(3)", "css:finder"],
-        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div[2]/div/details/ul/li/label/span", "xpath:idRelative"],
-        ["xpath=//label/span", "xpath:position"],
-        ["xpath=//span[contains(.,'In-Store')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "556580d9-3f9d-4805-8103-b52b11455b9d",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,1469.77783203125)",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "af3b3989-78f6-4b0c-a47e-905bf10407e6",
-      "comment": "",
-      "command": "open",
-      "target": "/",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "314cf5f3-ca10-482f-b474-5d69ddcc1326",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return 100",
-      "targets": [],
-      "value": "x"
-    }, {
-      "id": "c8ed14b2-2494-42c8-903c-a5dda02f868e",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return 0",
-      "targets": [],
-      "value": "c"
-    }, {
-      "id": "dc3cc547-db9e-4070-85ef-41c8e25fefe4",
-      "comment": "",
-      "command": "pause",
-      "target": "100000",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "a4302fd9-b308-4613-b7cd-e2bcf44e3f25",
-      "comment": "",
-      "command": "echo",
-      "target": "${count} + 1",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
     "id": "e27ed4c8-b9c1-4ba4-8991-c028fae1bbf1",
-    "name": "Kroger_Coupon_Clip",
+    "name": "Clip Kroger Coupon",
     "commands": [{
       "id": "3fa03c72-31ff-4f2a-a742-eb4cf10f527a",
       "comment": "",
       "command": "open",
       "target": "https://www.kroger.com/savings/cl/coupons/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a1e7e07-fec8-4c8f-b06d-db34ab3fd1cc",
+      "comment": "",
+      "command": "store",
+      "target": "1",
+      "targets": [],
+      "value": "no_filter"
+    }, {
+      "id": "ba7250a0-3078-4619-8aa5-2731f77776c8",
+      "comment": "",
+      "command": "if",
+      "target": "${no_filter} == 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0bb27e88-6775-4ce7-be98-99cd10c3769a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 0",
+      "targets": [],
+      "value": "in-store"
+    }, {
+      "id": "15eb4644-ca80-4ddb-a32c-ed2e5cc1cceb",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "pickup"
+    }, {
+      "id": "68a6b053-d62d-43bc-9b66-d639b16c0004",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "snacks"
+    }, {
+      "id": "ccccea92-2d96-4b39-afb0-e222ac81b51b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "produce"
+    }, {
+      "id": "0e2fda56-71c1-4634-8ba5-6ac5c724b1b1",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "baking"
+    }, {
+      "id": "3a75a2b2-1486-4e61-8edd-0c332cdd048b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "all_food"
+    }, {
+      "id": "bfe6d403-27f5-4b93-b589-59028e0f4829",
+      "comment": "",
+      "command": "if",
+      "target": "${in-store} == 1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67ecad8a-db88-4ae6-9ac4-58af8baaf26d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'In-Store')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac1b8fe3-57af-4429-bcea-556bc8b0c266",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b34ba93f-d437-4b61-be25-b5a79848633e",
+      "comment": "",
+      "command": "if",
+      "target": "${pickup} == 1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9c4f088-3f62-4c73-b459-b908eb0a3e83",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Pickup')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a396316-da63-426a-b41e-045ecf115cd6",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85bb8d99-58c6-41c1-9ec1-b54ec58e4d36",
+      "comment": "",
+      "command": "if",
+      "target": "${snacks} == 1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17c91d9b-fc33-4e8b-8c0f-3176bc2d24ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=Filter-item-Snacks",
+      "targets": [
+        ["id=Filter-item-Snacks", "id"],
+        ["name=snacks", "name"],
+        ["css=#Filter-item-Snacks", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Snacks']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[27]/label/input", "xpath:idRelative"],
+        ["xpath=//li[27]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6916f5bd-9f69-4c40-b43e-32260df2fdf3",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f6963db-8200-45e3-803d-0c936918dae4",
+      "comment": "",
+      "command": "if",
+      "target": "${produce} == 1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88084dba-483f-4d94-82fe-25cd2d92b9ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=Filter-item-Produce",
+      "targets": [
+        ["id=Filter-item-Produce", "id"],
+        ["name=produce", "name"],
+        ["css=#Filter-item-Produce", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Produce']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[26]/label/input", "xpath:idRelative"],
+        ["xpath=//li[26]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4696a75-6709-4108-9ac6-9c1d72e80ada",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9960e3f4-8b52-48b2-b0c6-20cea1aba8e0",
+      "comment": "",
+      "command": "if",
+      "target": "${baking} == 1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c06fa8d-a508-42b8-bd44-fad4d77dd4c1",
+      "comment": "",
+      "command": "click",
+      "target": "id=Filter-item-Bakery",
+      "targets": [
+        ["id=Filter-item-Bakery", "id"],
+        ["name=bakery", "name"],
+        ["css=#Filter-item-Bakery", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Bakery']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[2]/label/input", "xpath:idRelative"],
+        ["xpath=//div[3]/details/fieldset/ul/li[2]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7033878-247e-4218-b9d6-833e5fb532e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=Filter-item-Baking-Goods",
+      "targets": [
+        ["id=Filter-item-Baking-Goods", "id"],
+        ["name=baking goods", "name"],
+        ["css=#Filter-item-Baking-Goods", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Baking-Goods']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[3]/label/input", "xpath:idRelative"],
+        ["xpath=//div[3]/details/fieldset/ul/li[3]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "995caa87-f5e5-47e1-b444-20eea7c5346f",
+      "comment": "",
+      "command": "end",
+      "target": "",
       "targets": [],
       "value": ""
     }, {
@@ -86,37 +217,285 @@
       "targets": [],
       "value": "x"
     }, {
-      "id": "67ecad8a-db88-4ae6-9ac4-58af8baaf26d",
+      "id": "8b2540f1-ad88-4d7a-877b-487eeae939f6",
+      "comment": "",
+      "command": "if",
+      "target": "${all_food} == 1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e82702d-f06e-4202-a4e5-93c34f9e4391",
       "comment": "",
       "command": "click",
-      "target": "xpath=//span[contains(.,'In-Store')]",
-      "targets": [],
+      "target": "id=Filter-item-Bakery",
+      "targets": [
+        ["id=Filter-item-Bakery", "id"],
+        ["name=bakery", "name"],
+        ["css=#Filter-item-Bakery", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Bakery']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[2]/label/input", "xpath:idRelative"],
+        ["xpath=//div[3]/details/fieldset/ul/li[2]/label/input", "xpath:position"]
+      ],
       "value": ""
     }, {
-      "id": "e2ef8a92-e7fe-4f5f-a62c-617f7e96fb35",
-      "comment": "",
-      "command": "while",
-      "target": "${x} < 150",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "a183b259-6e9e-45c3-acd5-f2d59b4a13ed",
+      "id": "56f62ecb-914c-4456-80f6-52bcfdab240e",
       "comment": "",
       "command": "click",
-      "target": "xpath=//button[contains(.,'Clip')]",
-      "targets": [],
+      "target": "id=Filter-item-Baking-Goods",
+      "targets": [
+        ["id=Filter-item-Baking-Goods", "id"],
+        ["name=baking goods", "name"],
+        ["css=#Filter-item-Baking-Goods", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Baking-Goods']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[3]/label/input", "xpath:idRelative"],
+        ["xpath=//div[3]/details/fieldset/ul/li[3]/label/input", "xpath:position"]
+      ],
       "value": ""
     }, {
-      "id": "aed63cb4-728f-4301-a684-2b568791ea91",
+      "id": "017d8289-3a06-4bd9-8456-1fedc0e54314",
+      "comment": "",
+      "command": "click",
+      "target": "id=Filter-item-Beverages",
+      "targets": [
+        ["id=Filter-item-Beverages", "id"],
+        ["name=beverages", "name"],
+        ["css=#Filter-item-Beverages", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Beverages']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[5]/label/input", "xpath:idRelative"],
+        ["xpath=//li[5]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e080e3e3-28a2-4793-81c6-72da8f2ed9b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=Filter-item-Breakfast",
+      "targets": [
+        ["id=Filter-item-Breakfast", "id"],
+        ["name=breakfast", "name"],
+        ["css=#Filter-item-Breakfast", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Breakfast']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[6]/label/input", "xpath:idRelative"],
+        ["xpath=//li[6]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15b9b1c9-d8c0-4cfb-a915-812c2ae34f92",
+      "comment": "",
+      "command": "click",
+      "target": "id=Filter-item-Candy",
+      "targets": [
+        ["id=Filter-item-Candy", "id"],
+        ["name=candy", "name"],
+        ["css=#Filter-item-Candy", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Candy']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[7]/label/input", "xpath:idRelative"],
+        ["xpath=//li[7]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cff6f97-280f-41d5-9cf9-51a1bbcfa0ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=Filter-item-Canned-& Packaged",
+      "targets": [
+        ["id=Filter-item-Canned-& Packaged", "id"],
+        ["name=canned & packaged", "name"],
+        ["css=#Filter-item-Canned-\\&\\ Packaged", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Canned-& Packaged']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[8]/label/input", "xpath:idRelative"],
+        ["xpath=//li[8]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "680eaeda-2eac-48cb-bf0b-030f656439e7",
+      "comment": "",
+      "command": "click",
+      "target": "id=Filter-item-Dairy",
+      "targets": [
+        ["id=Filter-item-Dairy", "id"],
+        ["name=dairy", "name"],
+        ["css=#Filter-item-Dairy", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Dairy']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[11]/label/input", "xpath:idRelative"],
+        ["xpath=//li[11]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57091bc8-4537-4868-b558-37f18c84608c",
+      "comment": "",
+      "command": "click",
+      "target": "id=Filter-item-Deli",
+      "targets": [
+        ["id=Filter-item-Deli", "id"],
+        ["name=deli", "name"],
+        ["css=#Filter-item-Deli", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Deli']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[12]/label/input", "xpath:idRelative"],
+        ["xpath=//li[12]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be00a8e6-e6e4-4689-ba21-3044ee827fc6",
+      "comment": "",
+      "command": "click",
+      "target": "id=Filter-item-Frozen",
+      "targets": [
+        ["id=Filter-item-Frozen", "id"],
+        ["name=frozen", "name"],
+        ["css=#Filter-item-Frozen", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Frozen']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[14]/label/input", "xpath:idRelative"],
+        ["xpath=//li[14]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d5e09c1-d658-4d80-b246-a487f702fb19",
+      "comment": "",
+      "command": "click",
+      "target": "id=Filter-item-Meat-& Seafood",
+      "targets": [
+        ["id=Filter-item-Meat-& Seafood", "id"],
+        ["name=meat & seafood", "name"],
+        ["css=#Filter-item-Meat-\\&\\ Seafood", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Meat-& Seafood']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[21]/label/input", "xpath:idRelative"],
+        ["xpath=//li[21]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d67452de-71e5-412b-9624-8f7696a65f26",
+      "comment": "",
+      "command": "click",
+      "target": "id=Filter-item-Natural-& Organic",
+      "targets": [
+        ["id=Filter-item-Natural-& Organic", "id"],
+        ["name=natural & organic", "name"],
+        ["css=#Filter-item-Natural-\\&\\ Organic", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Natural-& Organic']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[22]/label/input", "xpath:idRelative"],
+        ["xpath=//li[22]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a8a31c5-efe2-4892-9b7d-7ef7835e348b",
+      "comment": "",
+      "command": "click",
+      "target": "id=Filter-item-Pasta-Sauces Grain",
+      "targets": [
+        ["id=Filter-item-Pasta-Sauces Grain", "id"],
+        ["name=pasta sauces grain", "name"],
+        ["css=#Filter-item-Pasta-Sauces\\ Grain", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Pasta-Sauces Grain']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[23]/label/input", "xpath:idRelative"],
+        ["xpath=//li[23]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b38aea24-ce7e-456b-ad35-9e22d1c9613b",
+      "comment": "",
+      "command": "click",
+      "target": "id=Filter-item-Produce",
+      "targets": [
+        ["id=Filter-item-Produce", "id"],
+        ["name=produce", "name"],
+        ["css=#Filter-item-Produce", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Produce']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[26]/label/input", "xpath:idRelative"],
+        ["xpath=//li[26]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d868263-788f-4cf8-87e7-ed0a6e1fb82b",
+      "comment": "",
+      "command": "click",
+      "target": "id=Filter-item-Snacks",
+      "targets": [
+        ["id=Filter-item-Snacks", "id"],
+        ["name=snacks", "name"],
+        ["css=#Filter-item-Snacks", "css:finder"],
+        ["xpath=//input[@id='Filter-item-Snacks']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/fieldset/ul/li[27]/label/input", "xpath:idRelative"],
+        ["xpath=//li[27]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6545d341-1cda-4f95-b1d9-0f497184271c",
       "comment": "",
       "command": "end",
       "target": "",
       "targets": [],
       "value": ""
+    }, {
+      "id": "768f537c-13d3-450f-b247-835aec9a49e3",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c5a3bf7-2b6e-41ea-a85c-df98c026d192",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Clear All')]",
+      "targets": [
+        ["css=.CollapsibleFacetContainer--Ways > .kds-Button", "css:finder"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div/details/button", "xpath:idRelative"],
+        ["xpath=//details/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Clear All')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c550d26-0206-4fa9-bb48-baea66b9701f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/details/button",
+      "targets": [
+        ["css=.CollapsibleFacetContainer--Special > .kds-Button", "css:finder"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[2]/details/button", "xpath:idRelative"],
+        ["xpath=//div[2]/details/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc067bb1-152b-408e-b4a4-9ebdf09e0b34",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[3]/details/button",
+      "targets": [
+        ["css=.CollapsibleFacetContainer--Departments > .kds-Button", "css:finder"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/button", "xpath:idRelative"],
+        ["xpath=//div[3]/details/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d48a590a-17a7-44cd-a3bb-b7179969af58",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[3]/details/button",
+      "targets": [
+        ["css=.CollapsibleFacetContainer--Departments > .kds-Button", "css:finder"],
+        ["xpath=//main[@id='content']/section/div/section[2]/section/section/div/div[2]/div/div/div/div[3]/details/button", "xpath:idRelative"],
+        ["xpath=//div[3]/details/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78dbb06e-d5aa-497c-8309-152426986fa7",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb8de8c9-2274-4b00-8170-d91851fe3b34",
+      "comment": "",
+      "command": "executeScript",
+      "target": "(function continuouslyScrollAndClick() {     const clickClipButtons = () => {         document.querySelectorAll('button').forEach(button => {             if (button.textContent.trim() === 'Clip') {                 button.click();             }         });     };      clickClipButtons();     window.scrollBy(0, window.innerHeight * 0.75);     setTimeout(continuouslyScrollAndClick, 1400); })();",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "8cb8cb49-233f-4ea3-9124-122b28b988b2",
-    "name": "Remove",
+    "name": "Remove Kroger Coupons",
     "commands": [{
       "id": "0e449847-a295-4537-bb62-cbc4000527fd",
       "comment": "",
