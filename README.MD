@@ -25,12 +25,12 @@ Below is a video demo of a Gold Sponsor-exclusive Selenium IDE script that autom
   </video>
 </details>
 
+>💡 There are two separate Viki sign-up flows. I highly recommend using the **Rakuten sign-up version**, as it's the one I personally use every couple of weeks.
+
+> 📺 **Now Available:** AppleTV+ & Paramount Plus automation — redeem free trials by automating new accounts via Selenium IDE.
+
 ---
 ## Scripts Overview
-
-**3/20/25 Update**: As of today, the Selenium IDE extension has been removed from the Chrome Web Store. You can still use the automation projects by enabling **Developer Mode** in your browser's extensions page and manually installing the extension by dragging and dropping the `Selenium-IDE.crx` file.  
-Alternatively, you can download an extension called **UI.Vision**, use the **Import Selenium .side** option in its settings to convert `.side` files to `.json`, and run the automation scripts as usual.
-
 
 These scripts utilize the [Selenium IDE browser extension](https://github.com/SeleniumHQ/selenium-ide).  
 <a href="https://www.selenium.dev/selenium-ide/" target="_blank" rel="noreferrer">
@@ -41,9 +41,10 @@ These scripts utilize the [Selenium IDE browser extension](https://github.com/Se
 - **Gold Sponsors Only**: Automates the creation of Bing Rewards accounts, including handling all steps up to email verification or CAPTCHA.
 - **Public Script**: Automates the closure of Microsoft Rewards accounts.
 
-### Kroger Coupon Clipping
-- Clips the maximum number of coupons on the Kroger website.
-- Simply log in to your account and run the script to attach coupons to your Kroger card.
+### Kroger Coupon Handler
+* Clips or unclips the maximum number of coupons on the Kroger website.
+* Includes filtering features to help you select specific coupon categories.
+* Simply log in to your account and run the script to attach or remove coupons from your Kroger card.
 
 ### Foctor AI Account Generator
 - Generates new accounts with random details, including email and basic passwords.
@@ -75,4 +76,39 @@ Your generous donations help cover development costs and expand the project's re
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
+---
+## non-Selenium IDE Web Automation Project(s)
+
+### Class Action Lawsuit Automation (Gold Sponsors Only)
+
+Automation script designed to simplify the process of filing claims for class action lawsuits. The script handles the tedious steps, ensuring you never miss out on potential compensation.
+
+This project is powered by **UI.Vision**, **Python**, and **JavaScript**.
+
+<details open>
+  <summary>🎥 Video Demo: Class Action Lawsuit Automation</summary>
+  <video src="https://github.com/user-attachments/assets/13cd9c4f-c1a3-4dc1-b486-d4aab8f2142a" controls="controls" style="max-width: 100%; height: auto;">
+    Your browser does not support video tags.
+    <a href="https://github.com/user-attachments/assets/13cd9c4f-c1a3-4dc1-b486-d4aab8f2142a">View the video</a>
+  </video>
+  <details>
+    <summary>Python Version</summary>
+    <video src="https://github.com/user-attachments/assets/2b512c18-f056-47a5-902b-78712c5e1160" controls="controls" style="max-width: 100%; height: auto;">
+    Your browser does not support video tags.
+    <a href="https://github.com/user-attachments/assets/2b512c18-f056-47a5-902b-78712c5e1160">View the video</a>
+    </video>
+  </details>
+</details>
+
+For more details, visit the [Class Action Lawsuit Automation Repository](https://github.com/Prem-ium/ClassActionLawsuit-Automation).
+
+---
+
+### 📊 Bing Rewards Automation 🤖
+
+Automate Bing searches, quizzes, and more across multiple accounts with this Python script!
+
+[GitHub Repository](https://github.com/Prem-ium/BingRewards)
+
+---
 
